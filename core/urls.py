@@ -23,7 +23,9 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('pdfapp.urls')),
+    path('pdf/', include('pdfapp.urls')),
+    path('feedback/', include("feedback.urls")),
+
 ]
 
 
