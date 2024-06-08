@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Speech Converter</title>
+</head>
+<body>
+    <h1>Text to Speech Converter</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="text" rows="10" cols="30"></textarea><br>
+        <input type="submit" value="Convert to Speech">
+    </form>
+</body>
+</html>

@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('pdf/', include('pdfapp.urls')),
     path('feedback/', include("feedback.urls")),
+    path('', include("text_to_speech.urls")),
 
 ]
 
