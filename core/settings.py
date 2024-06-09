@@ -49,8 +49,9 @@ INSTALLED_APPS = [
     'feedback.apps.FeedbackConfig',
 
     'pdfapp',
-    # 'recommend',
     'text_to_speech',
+    'report_app',
+    # 'recommend',
 ]
 
 MIDDLEWARE = [

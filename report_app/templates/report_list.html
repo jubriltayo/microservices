@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report List</title>
+</head>
+<body>
+    <h1>Reports</h1>
+    <ul>
+        {% for report in reports %}
+            <li>{{ report.title }} - {{ report.created_at }} </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url "export_to_csv" %}">Export to CSV</a>
+    <a href="{% url "export_to_excel" %}">Export to Excel</a>
+</body>
+</html>

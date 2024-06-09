@@ -26,6 +26,7 @@ urlpatterns = [
     path('pdf/', include('pdfapp.urls')),
     path('feedback/', include("feedback.urls")),
     path('', include("text_to_speech.urls")),
+    path('', include("report_app.urls")),
 
 ]
 
